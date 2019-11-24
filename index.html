@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="style.css" rel = stylesheet type="text/css">
+        <!--FONTS! Is laggy because it loads from google - can change by downloading i think-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class = "full-fit">
+            <div class="navbar">
+                <div class = "nav-notif">This is a notification</div>
+				<div class = "modal-div x-div">
+					<div class="block login">
+						<div class="notif-icon x">x</div>
+						<img style = "display: block; margin-left: auto; margin-right: auto;"src="Images/logo.png" width="50" height="50">
+						<h1 style="text-align: center;">Welcome Back</h1>
+						<div class = "input-div" style="margin-top: 10px">
+							<input class = "input" type="text" autocomplete = off placeholder="Username" name="search" maxlength="256" style="font-weight: 400">
+						</div>
+						<div class = "input-div" style="margin-top: 10px">
+							<input class = "input" type="password" autocomplete = off placeholder="Password" name="search" maxlength="256" style="font-weight: 400">
+						</div>
+						<div class="button blue" style="display: block; margin-top: 10px; margin-bottom: 5px">Log In</div>
+						<a style="font-weight: 400; margin-right: 5px">Forgot password?</a>
+						<a style="font-weight: 400;">Forgot username?</a>
+						<div style="font-weight: 400; display: block;"><a>Create an account</a></div>
+					</div> 
+					<!--<div class="block">
+						<img style = "display: block; margin-left: auto; margin-right: auto;"src="Images/logo.png" width="50" height="50">
+						<h1 style="text-align: center;">Sign Up</h1>
+						<div class = "input-div" style="margin-top: 10px">
+							<input class = "input" type="email" autocomplete = off placeholder="Email" name="search" maxlength="256" style="font-weight: 400">
+						</div>
+						<div class = "input-div" style="margin-top: 10px">
+							<input class = "input" type="password" autocomplete = off placeholder="Password" name="search" maxlength="256" style="font-weight: 400">
+						</div>
+						<div class = "input-div" style="margin-top: 10px">
+							<input class = "input" type="password" autocomplete = off placeholder="Password" name="search" maxlength="256" style="font-weight: 400">
+						</div>
+						<div class="button blue" style="display: block; margin-top: 10px; margin-bottom: 5px">Log In</div>
+						<div style="font-weight: 400;">Have an account? <a>Log In</a></div>
+					</div> !-->
+				</div>
+                <a class="icon-button m10r-no-mobile"><img src = "Images/logo.png" height="32" width="32"></a> <!--M10R!-->
+                <h1 id="nav-text"><a>Student Scholar</a></h1>
+                <div id="nav-search" class="input-div">
+                    <img src="Images/search.png" height="32" width="32">
+                    <div style = "margin-left: 5px" class="input-tag">
+						PCHS
+						<div class="notif-icon x">x</div>
+					</div> 
+                    <input id = 'nav-input' class = "input" type="text" autocomplete = off placeholder="Search for schools, classes, or teachers" name="search" maxlength="256" style="font-weight: 400">
+					<div id='nav-suggest'>
+						<a class = 'nav-suggest-child'>
+							<img style="display: inline-block" src="Images/message-category.png" width = "24">
+							<h2 style="display: inline-block; vertical-align: top; margin-right: 5px;">Witherspoon Hall</h2>
+							<div class = "button white small" style = "float:right;">Join</div>
+							<h2 style="display: inline-block; color: #9fd5ff;  vertical-align: top;">Group Chat</h2>
+							<h2>25 Students</h2>
+						</a>
+					</div>
+                </div>
+                <div id = "nav-menu">
+					<a class = "button">Home</a>
+					<a class = "button">About</a>
+					<a class = "button">Contact</a>
+					<a class = "button blue">SIGN UP</a>
+					<a class = "button white margin-10-mobile">LOG IN</a>
+                </div>				
+                <a id = "nav-mobile-search" class = "icon-button m5l-no-mobile"> <!--M5L!-->
+                    <img src="Images/search.png" height="32" width="32">
+                </a>
+				<div class = 'drop-down-parent'> <!-- MESSAGES M5L M10R !-->
+					<div class = "icon-button link m5l-no-mobile m10r-no-mobile" style = "cursor: auto">
+						<img src="Images/bell.png" height="32" width="32">
+						<div class = "notif-icon">2</div>
+					</div>
+					<div class = "drop-down">
+						<h1 style="padding: 0px 10px">Notifications</h1>
+						<div class="link" style="padding: 5px 10px">
+							<h2>ITSC 1212 - Jokell</h2>
+							<h3>Announcement</h3>
+							<h3 class = "date">Yesterday, 2:57 PM</h3>
+							<div>Test 3 Pushed Back</div>
+							<h3 class = "date";>6:07 PM</h3>
+							<div>Test 3 Tomorrow</div>
+						</div>
+						<div class="line"></div>
+						<div class="link" style="padding: 5px 10px">
+							<h2>ITSC 1213 - Thompson</h2>
+							<h3>Messaging</h3>
+							<h3 class = "date">Yesterday, 2:57 PM</h3>
+							<div>JessiCant mentioned you</div>
+						</div>
+					</div>
+				</div>
+				<div class = "drop-down-parent"> <!-- NOTIFICATIONS M15R !-->
+					<div class = "icon-button link m15r-no-mobile" style = "cursor: auto">
+						<img src="Images/message.png" height="32" width="32">
+						<div class = "notif-icon">19</div>
+					</div>
+					<div class = "drop-down">
+						<h1 style="padding: 0px 10px">Messages</h1>
+						<div class="link" style="padding: 5px 10px">
+							<h2>RapidlyDeteriorating</h2>
+							<h3 class = "date">Yesterday, 2:57 PM</h3>
+							<div>Hey</div>
+							<div>Want to go to the library tomorrow at 6? </div>
+							<h3 class = "date";>6:07 PM</h3>
+							<div>Yo, I'm here</div>
+						</div>
+						<div class="line"></div>
+						<div class="link" style="padding: 5px 10px">
+							<h2>RapidlyDeteriorating</h2>
+							<h3 class = "date">Yesterday, 2:57 PM</h3>
+							<div>Hey</div>
+							<div>Want to go to the library tomorrow at 6? </div>
+							<h3 class = "date";>6:07 PM</h3>
+							<div>Yo, I'm here</div>
+						</div>
+					</div>
+				</div>
+				<div class = "drop-down-parent" id = "nav-user">
+					<div class = "icon-button" style = "height:auto; width: auto;">
+						<h2 style="margin-right: 5px;">Welcome Adi!</h2>
+					</div>
+					<div class = "drop-down" style="padding: 10px 15px">
+						<h1 style="margin-bottom: 5px">Welcome BiggestAdi!</h1>
+						<a class="button small blue" style="display: block; padding: 2px 5px; margin-bottom: 5px;">Dashboard</a>
+						<a class="button small blue" style="display: block; padding: 2px 5px;">Log Out</a>
+					</div>
+				</div>
+				<div class = "drop-down-parent">
+					<div id = "nav-user-mobile" class = "icon-button link m15r-no-mobile" style = "transform: translate(0px, -5px); cursor: auto"><!-- PROFILE M15R !-->
+						<img src="Images/profile.png" height="32" width="32">
+					</div>
+					<div class = "drop-down" style="padding: 10px 15px">
+						<h1 style="margin-bottom: 5px">Welcome BiggestAdi!</h1>
+						<a class="button small blue" style="display: block; padding: 2px 5px; margin-bottom: 5px;">Dashboard</a>
+						<a class="button small blue" style="display: block; padding: 2px 5px;">Log Out</a>
+					</div>
+				</div>
+				<a id = "nav-menu-button" class = "icon-button" style="height: 16px; width: 16px; padding: 5px;">
+                    <img src="Images/menu.png" height="16" width="16">
+                </a>
+            </div>
+            <div class="section gradient split">
+                <div class="75">
+                    <div class="block"></div>
+                </div>
+                <div class="25">Hiiii</div>
+            </div>
+        </div>
+    <script src="JavaScript.js" type="text/javascript"></script>
+    </body>
+</html>
